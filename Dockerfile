@@ -1,5 +1,5 @@
 FROM python:3.12
-COPY . /app
+COPY requirements.txt app.py app1.py /app
 WORKDIR /app
 RUN pip install -r requirements.txt
 ENTRYPOINT ["python"]
