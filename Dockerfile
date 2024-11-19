@@ -1,5 +1,6 @@
 FROM python:3.12
-ENV TEST=test
+ARG TEST
+ENV TEST=$TEST
 COPY . /app
 WORKDIR /app
 RUN pip install -r requirements.txt
