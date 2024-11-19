@@ -28,4 +28,4 @@ RUN pip install flask gunicorn uvicorn
 COPY . .
 
 CMD gunicorn app:app --workers 3 --worker-class uvicorn.workers.UvicornWorker --bind= 0.0.0.0:3478 --access-logfile -
-EXPOSE 8000
+EXPOSE 3478
