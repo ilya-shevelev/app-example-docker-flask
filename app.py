@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    return f'{os.environ.get("TEST")}'
+    return f'{os.environ.get('APP_CONFIG__DB__URL')}'
 
 if __name__ == "__main__":
     port = 3478
